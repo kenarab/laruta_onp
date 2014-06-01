@@ -1,3 +1,4 @@
+source("hhba-laruta-config.R")
 pkgTest <- function(x)
 {
   if (!require(x,character.only = TRUE,quietly=TRUE))
@@ -105,7 +106,6 @@ get_presupuesto_normalizado<-function(data){
   data_normalizada
 }
 
-data<-data_normalizada_ok
 make_treemap_por_anio<-function(data){
   for (anio in sort(unique(data$anio))){
     for (ty in sort(unique(data$type))){

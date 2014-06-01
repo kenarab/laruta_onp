@@ -8,6 +8,10 @@ doc = htmlTreeParse(url_onp, useInternalNodes = T)
 
 scrape(object=txt,parse=TRUE)
 
+#script de ejemplo
+#wget http://www.mecon.gov.ar/onp/html/presutexto/proy2014/ley/pdf/anexo_estadistico/cuadros_comparativos/cap1cu04.rtf -O cap1cu04_2014.rtf
+
+
 setwd('~/Descargas/')
 anio<-2010
 for (anio in c(2003:2014)){
