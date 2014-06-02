@@ -2,7 +2,7 @@ source('hhba-laruta-lib.R')
 #copie a mano los archivos obtenidos al csv 'onp-cua_com_jurisdiccion.csv'
 
 #normalizar datos
-data<-read.csv(paste(home_data,'onp-cua_com_jurisdiccion.csv',sep=''),stringsAsFactors=FALSE)
+data<-read.csv2(paste(home_data,'onp-cua_com_jurisdiccion.csv',sep=''),dec=",",stringsAsFactors=FALSE)
 data_normalizada<-get_presupuesto_normalizado(data)
 
 data_normalizada<-data_normalizada[order(data_normalizada$anio,data_normalizada$jurisdiccion,data_normalizada$type),]
@@ -23,7 +23,7 @@ data_normalizada_ok<-data_normalizada_ok[order(data_normalizada_ok$anio,data_nor
 names(data_normalizada_ok)
 
 
-write.csv(data_normalizada_ok[data_normalizada_ok$juris_ok=='Servicio de la Deuda Pública',],paste(home_data,'onp-presupuesto_procesado_deuda.csv',sep=''))
+#write.csv(data_normalizada_ok[data_normalizada_ok$juris_ok=='Servicio de la Deuda Pública',],paste(home_data,'onp-presupuesto_procesado_deuda.csv',sep=''))
 
 write.csv(data_normalizada_ok,paste(home_data,'onp-presupuesto_procesado.csv',sep=''))
 
