@@ -14,56 +14,77 @@ pkgTest("RCurl")
 pkgTest("reshape")
 pkgTest("treemap")
 
-corregir_juris<-function(data,juris,juris_ok,categoria){
+corregir_juris<-function(data,juris,juris_abrev,categoria){
+  juris_ok<-juris[1]
+  print(paste('corrigiendo',juris_ok))
   for (j in juris){
     data[data$jurisdiccion== j,]$juris_ok<-juris_ok
+    data[data$jurisdiccion== j,]$juris_abrev<-juris_abrev
     data[data$jurisdiccion== j,]$categoria<-categoria
   }
   data
 }
-organismos_unicos<-data.frame(organismo=character(),categoria=character(),stringsAsFactors=FALSE)
-organismos_unicos[1,]<-c("Poder Legislativo Nacional","Institucional")
-organismos_unicos[2,]<-c("Poder Judicial de la Nación","Institucional")
-organismos_unicos[3,]<-c("Ministerio Público","Institucional")
-organismos_unicos[4,]<-c("Jefatura de Gabinete de Ministros","Ejecutivo")
-organismos_unicos[5,]<-c("Presidencia de la Nación","Ejecutivo")
-organismos_unicos[6,]<-c("Ministerio de Defensa","Externo")
-organismos_unicos[7,]<-c("Ministerio de Trabajo, Empleo y Seguridad Social","Basico")
-organismos_unicos[8,]<-c("Ministerio de Desarrollo Social","Basico")
-organismos_unicos[9,]<-c("Servicio de la Deuda Pública","Financiero")
-organismos_unicos[10,]<-c("Obligaciones a Cargo del Tesoro","Financiero")
-organismos_unicos[11,]<-c("Ministerio de Ciencia, Tecnología e Innovación Productiva","Económico")
-organismos_unicos[12,]<-c("Ministerio de Planificación Federal, Inversión Pública y Servicios","Económico")
+organismos_unicos<-data.frame(organismo=character(),organismo_abrev=character(),categoria=character(),stringsAsFactors=FALSE)
 
+agregar_organismo_unico<-function(juris,juris_abrev,categoria){
+  organismos_unicos[nrow(organismos_unicos)+1,]<<-c(juris,juris_abrev,categoria)
+}
+
+
+agregar_organismo_unico("Poder Legislativo Nacional","Poder Legislativo","Institucional")
+agregar_organismo_unico("Poder Judicial de la Nación","Poder Judicial","Institucional")
+agregar_organismo_unico("Ministerio Público","Ministerio Público","Institucional")
+agregar_organismo_unico("Jefatura de Gabinete de Ministros","Jefatura de Gabinete","Ejecutivo")
+agregar_organismo_unico("Presidencia de la Nación","Presidencia","Ejecutivo")
+agregar_organismo_unico("Ministerio de Defensa","Defensa","Exterior")
+agregar_organismo_unico("Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo","Básico")
+agregar_organismo_unico("Ministerio de Desarrollo Social","Desarrollo Social","Básico")
+agregar_organismo_unico("Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro","Financiero")
+agregar_organismo_unico("Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia","Productivo")
 
 
 ajustar_juris<-function(data){
   data$juris_ok<-""
+  data$juris_abrev<-""
   data$categoria<-""
-  j<-1
   for (j in c(1:nrow(organismos_unicos))){
     organismo_actual<-organismos_unicos[j,]
     data<-corregir_juris(data,
                          organismo_actual[,c("organismo")],
-                         organismo_actual[,c("organismo")],
+                         organismo_actual[,c("organismo_abrev")],
                          organismo_actual[,c("categoria")])
   }
   data<-corregir_juris(data,c("Ministerio del Interior","Ministerio del Interior y Transporte")
-                           ,"Ministerio del Interior","Interior")
+                           ,"Interior","Interior")
   data<-corregir_juris(data,c("Ministerio de Salud","Ministerio de Salud y Ambiente")
-                       ,"Ministerio de Salud","Basico")
+                       ,"Salud","Básico")
   data<-corregir_juris(data,c("TOTAL","TOTAL GASTOS CORRIENTES Y DE CAPITAL ")
-                       ,"TOTAL GASTOS CORRIENTES Y DE CAPITAL ","TOTAL")
+                       ,"TOTAL","TOTAL")
   data<-corregir_juris(data,c("Ministerio de Justicia, Seguridad  y Derechos Humanos","Ministerio de Justicia  y Derechos Humanos","Ministerio de Justicia y Derechos Humanos","Ministerio de Seguridad")
-                       ,"Ministerio de Justicia, Seguridad  y Derechos Humanos","Interior")
-  data<-corregir_juris(data,c("Ministerio de Relaciones Exteriores y Culto","Ministerio de Relaciones Exteriores, Comercio Internacional y Culto","Ministerio de Relac. Exteriores, Comercio Internac. y Culto")
-                       ,"Ministerio de Relaciones Exteriores y Culto","Externo")
+                       ,"Justicia, Seguridad  y Derechos Humanos","Interior")
+  data<-corregir_juris(data,c("Ministerio de Relaciones Exteriores y Culto",
+                              "Ministerio de Relaciones Exteriores, Comercio Internacional y Culto",
+                              "Ministerio de Relac. Exteriores, Comercio Internac. y Culto",
+                              "Ministerio de Relac Exteriores, Comercio Internac.y Culto")
+                       ,"Cancillería","Exterior")
   data<-corregir_juris(data,c("Ministerio de Educación","Ministerio de Educación, Ciencia y Tecnología")                      
-                       ,"Ministerio de Educación", "Basico")
-  data<-corregir_juris(data,c("Ministerio de Economía","Ministerio de Economía y Producción","Ministerio de Economía y Finanzas Públicas",
-                              "Ministerio de Producción","Ministerio de Industria","Ministerio de Agricultura, Ganadería y Pesca","Ministerio de Turismo",
+                       ,"Educación", "Básico")
+  data<-corregir_juris(data,c("Ministerio de Economía","Ministerio de Economía y Producción",
+                              "Ministerio de Economía y Finanzas Públicas",
+                              "Ministerio de Agricultura, Ganadería y Pesca",
+                              "Ministerio de Agricultura, Ganadería y Pesca",
+                              "Ministerio de Turismo")
+                       ,"Economía", "Productivo")
+  data<-corregir_juris(data,c("Ministerio de Planificación Federal, Inversión Pública y Servicios",
+                              "Ministerio de Planificación Federal, Inversión Publica y Servicios")
+                        ,"Planificación","Productivo")
+  data<-corregir_juris(data,c("Ministerio de Producción","Ministerio de Industria","Ministerio de Producción",
+                              "Ministerio de Industria",
                               "Ministerio de la Producción")
-                       ,"Ministerio de Economía", "Económico")
+                       ,"Industria", "Productivo")
+  data<-corregir_juris(data,c("Servicio de la Deuda Pública",
+                              "Servicio de la Deuda Publica"),
+                        "Deuda Publica","Financiero")
 }
 
 
@@ -87,7 +108,7 @@ get_presupuesto_normalizado<-function(data){
           anio_aplicar<-anio-1
         }
         total_anio<-
-          sum(as.numeric(data_anio[-grep('TOTAL',data_anio$jurisdiccion),data_field]))
+          sum(as.numeric(data_anio[-grep('TOTAL',data_anio$juris_ok),data_field]))
         if (anio_aplicar>=min(anios)){
           value<-as.numeric(data_anio[data_anio$juris==juris,data_field])
           new_record<-c(as.numeric(anio_aplicar),type,juris,value)
@@ -106,12 +127,12 @@ get_presupuesto_normalizado<-function(data){
   data_normalizada
 }
 
-make_treemap_por_anio<-function(data){
-  for (anio in sort(unique(data$anio))){
-    for (ty in sort(unique(data$type))){
-      data_anio<-data[data$anio==anio & 
-                      !data$juris_ok=="TOTAL GASTOS CORRIENTES Y DE CAPITAL " &
-                      data$type==ty,]    
+make_treemap_por_anio<-function(data_normalizada_ok){
+  for (anio in sort(unique(data_normalizada_ok$anio))){
+    for (ty in sort(unique(data_normalizada_ok$type))){
+      data_anio<-data_normalizada_ok[data_normalizada_ok$anio==anio & 
+                      !data_normalizada_ok$juris_ok=="TOTAL" &
+                      data_normalizada_ok$type==ty,]    
       if (nrow(data_anio)>0){
         if (ty=='PROY')
           tipo='proyectado'
@@ -121,7 +142,8 @@ make_treemap_por_anio<-function(data){
         file_name<-paste(home_graficos,'presupuesto_',anio,'_', tipo,sep="")
         print(paste('elaborando',file_name))
         png(file_name, height=heightPNG, width=widthPNG, bg="white")   
-        treemap(data_anio,c('categoria','juris_ok'),vSize='value',title=paste("Presupuesto Nacional",tipo, " en año",anio))
+        #treemap(data_anio,c('categoria','juris_ok'),vSize='value',title=paste("Presupuesto Nacional",tipo, " en año",anio))
+        treemap(data_anio,c('categoria','juris_abrev'),vSize='value',title=paste("Presupuesto Nacional",tipo, " en año",anio,"(por jurisdicción y categoría)","\nfuente: ONP (Ministerio de Economía)"))
         dev.off()    
       }
     }
