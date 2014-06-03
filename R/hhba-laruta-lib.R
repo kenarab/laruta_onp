@@ -139,7 +139,7 @@ make_treemap_por_anio<-function(data_normalizada_ok){
         if (ty=='EJEC')
           tipo='ejecutado'
         #file_name<-paste(home_graficos,'presupuesto_treemap_',anio,'_', tipo,sep="")
-        file_name<-paste(home_graficos,'presupuesto_',anio,'_', tipo,sep="")
+        file_name<-paste(home_graficos,'presupuesto_',anio,'_', tipo,".png",sep="")
         print(paste('elaborando',file_name))
         png(file_name, height=heightPNG, width=widthPNG, bg="white")   
         #treemap(data_anio,c('categoria','juris_ok'),vSize='value',title=paste("Presupuesto Nacional",tipo, " en año",anio))

@@ -35,15 +35,6 @@ make_treemap_por_anio(data_normalizada_ok)
 write.csv(data_normalizada_ok,paste(home_data,'onp-presupuesto_procesado.csv',sep=''))
 
 
-#debug
-data_anio<-data[data$anio==anio & 
-                  !data$juris_ok=="TOTAL GASTOS CORRIENTES Y DE CAPITAL " &
-                  data$type==ty,]    
-
-data_anio<-data[data$anio==anio & 
-                  !data$jurisdiccion=="TOTAL" 
-                  ,]    
-names(data)
 
 #TODO 
   
