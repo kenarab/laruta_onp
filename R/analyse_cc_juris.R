@@ -3,7 +3,13 @@ source('hhba-laruta-lib.R')
 
 #normalizar datos
 data<-read.csv2(paste(home_data,'onp-cua_com_jurisdiccion.csv',sep=''),dec=",",stringsAsFactors=FALSE)
+
 data_normalizada<-get_presupuesto_normalizado(data)
+aggregate(data_normalizada$value,by=list(data_normalizada$type,data_normalizada$anio),FUN=sum)
+
+data_normalizada[grep('Ministerio de Planificación Federal',data_normalizada$jurisdiccion),]
+
+
 
 data_normalizada<-data_normalizada[order(data_normalizada$anio,data_normalizada$jurisdiccion,data_normalizada$type),]
 

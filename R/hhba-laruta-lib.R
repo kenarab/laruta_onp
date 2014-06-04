@@ -149,3 +149,15 @@ make_treemap_por_anio<-function(data_normalizada_ok){
     }
   }
 }
+
+retrieve_docs<-function(anios,path,filename,filetype,output_dir){
+  dir.create(output_dir,showWarnings=FALSE)
+  for (anio in anios){
+    #    path<-'http://www.mecon.gov.ar/onp/html/presutexto/ley#anio#/ley/pdf/anexo_estadistico/'
+    path_aplicado<-sub('#anio#',anio,path)
+    command<-paste('wget ',path_aplicado,filename,filetype,' -O ',output_dir,filename,'_',anio,filetype,sep='')
+    print(command)
+    system(command)
+    Sys.sleep(runif(1,0.2,1))
+  }
+}
