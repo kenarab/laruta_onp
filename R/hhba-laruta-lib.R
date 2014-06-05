@@ -108,7 +108,7 @@ get_presupuesto_normalizado<-function(data){
           anio_aplicar<-anio-1
         }
         total_anio<-
-          sum(as.numeric(data_anio[-grep('TOTAL',data_anio$juris_ok),data_field]))
+          sum(as.numeric(data_anio[-grep('TOTAL',data_anio$jurisdiccion),data_field]))
         if (anio_aplicar>=min(anios)){
           value<-as.numeric(data_anio[data_anio$juris==juris,data_field])
           new_record<-c(as.numeric(anio_aplicar),type,juris,value)

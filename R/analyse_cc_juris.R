@@ -21,15 +21,10 @@ data_normalizada_ok<-cbind(data_normalizada_value,data_normalizada_share)
 
 #verifico que no hay jurisdicciones sin corregir
 data_normalizada[nchar(data_normalizada$juris_ok)==0,]
-
-
-data_normalizada_ok[data_normalizada_ok$juris_ok=='Servicio de la Deuda Pública',]
-
 #elimino columnas repetidas
 data_normalizada_ok<-data_normalizada_ok[,c(1:6,12)]
 data_normalizada_ok<-data_normalizada_ok[order(data_normalizada_ok$anio,data_normalizada_ok$juris_ok,data_normalizada_ok$type),]
 names(data_normalizada_ok)
-
 
 #write.csv(data_normalizada_ok[data_normalizada_ok$juris_ok=='Servicio de la Deuda Pública',],paste(home_data,'onp-presupuesto_procesado_deuda.csv',sep=''))
 
