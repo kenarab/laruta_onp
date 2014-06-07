@@ -60,7 +60,8 @@ ajustar_juris<-function(data){
                        ,"Salud","Básico")
   data<-corregir_juris(data,c("TOTAL","TOTAL GASTOS CORRIENTES Y DE CAPITAL ")
                        ,"TOTAL","TOTAL")
-  data<-corregir_juris(data,c("Ministerio de Justicia, Seguridad  y Derechos Humanos","Ministerio de Justicia  y Derechos Humanos","Ministerio de Justicia y Derechos Humanos","Ministerio de Seguridad")
+  data<-corregir_juris(data,c("Ministerio de Justicia, Seguridad  y Derechos Humanos","Ministerio de Justicia  y Derechos Humanos",
+                              "Ministerio de Justicia y Derechos Humanos","Ministerio de Seguridad")
                        ,"Justicia, Seguridad  y Derechos Humanos","Interior")
   data<-corregir_juris(data,c("Ministerio de Relaciones Exteriores y Culto",
                               "Ministerio de Relaciones Exteriores, Comercio Internacional y Culto",
@@ -78,7 +79,7 @@ ajustar_juris<-function(data){
   data<-corregir_juris(data,c("Ministerio de Planificación Federal, Inversión Pública y Servicios",
                               "Ministerio de Planificación Federal, Inversión Publica y Servicios")
                         ,"Planificación","Productivo")
-  data<-corregir_juris(data,c("Ministerio de Producción","Ministerio de Industria","Ministerio de Producción",
+  data<-corregir_juris(data,c("Ministerio de Industria","Ministerio de Producción","Ministerio de Producción",
                               "Ministerio de Industria",
                               "Ministerio de la Producción")
                        ,"Industria", "Productivo")
