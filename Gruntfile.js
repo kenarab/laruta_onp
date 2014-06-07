@@ -25,6 +25,14 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
 
+    sass: {
+        dist: {
+            files: {
+                '<%= yeoman.app %>/styles/main.css': '<%= yeoman.app %>/styles/main.scss'
+            }
+        }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -42,9 +50,12 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
-      styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+      sass: {
+        files: '<%= yeoman.app %>/styles/**/*.scss',
+        tasks: ['sass'],
+        options: {
+          livereload: true
+        }
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -341,7 +352,8 @@ module.exports = function (grunt) {
     }
   });
 
-
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -353,6 +365,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
+      'sass',
       'watch'
     ]);
   });
@@ -388,6 +401,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
+
     'newer:jshint',
     'test',
     'build'
