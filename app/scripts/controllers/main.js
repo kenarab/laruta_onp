@@ -10,9 +10,11 @@ angular.module('onpApp')
             })
         }
 
+        $scope.layout = "all"
+
         $scope.init = function() {
             // Parse and process data
-            d3.csv('data/onp-presupuesto_procesado.csv', function(data) {
+            d3.csv('data/onp-presupuesto_indicadores.csv', function(data) {
                 $scope.alldata = data;
                 $scope.setYear(2013);
                 $scope.$apply()
