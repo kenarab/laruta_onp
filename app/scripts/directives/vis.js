@@ -25,6 +25,7 @@ angular.module('onpApp')
 
         function display_group_all() {
             force.gravity(layout_gravity)
+                .nodes(nodes)
                 .charge(charge)
                 .friction(0.9)
                 .on("tick", function(e) {
@@ -106,7 +107,6 @@ angular.module('onpApp')
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
 
-
                 scope.$watch('data', function(data) {
                     if (!data) return;
 
@@ -120,7 +120,7 @@ angular.module('onpApp')
 
 
                     radius.domain([0, d3.max(node_data, function(d) { return parseInt(d['value'], 10); } )]);
-
+                    nodes = []
                     for (var i=0; i<node_data.length; i++) {
                         nodes.push({
                             index: i,
@@ -131,7 +131,7 @@ angular.module('onpApp')
                             y: Math.random() * 800,
                             category: node_data[i]['categoria'],
                             jurisdiction: node_data[i]['juris_ok'],
-                            changeCategory: Math.floor((Math.random()*7) - 3),
+                            changeCategory: Math.floor((Math.random()*7) - 3)
                         })
                     }
 
@@ -140,7 +140,7 @@ angular.module('onpApp')
                     });
 
                     bounding_radius = radius(total.value);
-
+                    
                     // Circles
                     circles = svg.selectAll('circles')
                         .data(nodes)
@@ -154,6 +154,8 @@ angular.module('onpApp')
                     circles.transition()
                         .duration(2000)
                         .attr("r", function(d) { return d.radius })
+
+                    circles.exit().remove()
 
                     display_group_all();
                 });
