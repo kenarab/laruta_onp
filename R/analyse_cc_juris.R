@@ -7,9 +7,10 @@ data<-read.csv2(paste(home_data,'onp-cua_com_jurisdiccion.csv',sep=''),dec=",",s
 data_normalizada<-get_presupuesto_normalizado(data[data$anio>2002,])
 data_normalizada_ok<-agregar_enriquecer(data_normalizada)
 data_procesada<-calcular_indicadores(data_normalizada_ok)
-warnings()
-write.csv(data_normalizada_ok,paste(home_data,'onp-presupuesto_indicadores.csv',sep=''))
-
+data_procesada$id<-rownames(data_procesada)
+names(data_procesada)
+data_procesada<-data_procesada[,c(ncol(data_procesada),c(2:(ncol(data_procesada)-1)))]
+write.csv(data_procesada,paste(home_data,'onp-presupuesto_indicadores.csv',sep=''),row.names=FALSE)
 data_procesada[c(1:5),]
 
 
