@@ -123,7 +123,7 @@ calcular_indicadores<-function(data_normalizada_ok){
   data_indicadores<-data_indicadores[,-c(6,7,8)]
   for (i in c(1:nrow(data_normalizada_ok))){
     j<-which(data_indicadores$anio==data_normalizada_ok[i,'anio']
-             &data_indicadores$juris_ok==data_normalizada_ok[i,'juris'])
+             &data_indicadores$juris_ok==data_normalizada_ok[i,'juris_ok'])
     if (length(j)==0){
       j<-nrow(data_indicadores)+1
       for (col in names(data_normalizada_ok)[c(1:5)]){
