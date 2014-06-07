@@ -19,6 +19,45 @@ angular.module('onpApp')
             damper = 0.1,
             bounding_radius = null
 
+        var positions = [
+            { "name": "Cancillería", "department": { "x":225, "y":476 } },
+            { "name": "Ciencia", "department": { "x":225, "y":476 } },
+            { "name": "Defensa", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "", "department": { "x":225, "y":476 } },
+        ]
+
+        function find_position(name) {
+            var pos = positions.filter(function (pos) {
+                return pos.name == name
+            });
+            console.log(pos);        //TODO(gb): Remove trace!!!
+            return pos.length>0 ? pos[0] : { "name": "Other", "department": { "x":0, "y":0 } }
+        }
+
         function charge(d) {
             return -Math.pow(d.radius, 2.0) / 8;
         }
@@ -33,6 +72,7 @@ angular.module('onpApp')
                         .each(move_towards_center(e.alpha))
 //                        .each(total_sort(e.alpha))
 //                        .each(buoyancy(e.alpha))
+//                        .each(static_department(e.alpha))
                         .attr("cx", function(d) {return d.x;})
                         .attr("cy", function(d) {return d.y;});
                 });
@@ -70,6 +110,21 @@ angular.module('onpApp')
             return function(d) {
                 var targetY = height/2 - (d.changeCategory / 3) * bounding_radius
                 d.y = d.y + (targetY - d.y) * (default_gravity) * alpha * alpha * alpha * 100
+            };
+        }
+
+        function static_department(alpha) {
+            return function(d){
+                var targetY = 0;
+                var targetX = 0;
+
+                if (d.positions.department) {
+                    targetX = d.positions.department.x;
+                    targetY = d.positions.department.y;
+                };
+
+                d.y += (targetY - d.y) * Math.sin(Math.PI * (1 - alpha*10)) * 0.6
+                d.x += (targetX - d.x) * Math.sin(Math.PI * (1 - alpha*10)) * 0.4
             };
         }
 
@@ -118,29 +173,31 @@ angular.module('onpApp')
                         return d['categoria'] == "TOTAL" && d['type'] == "EJEC";
                     })
 
-
                     radius.domain([0, d3.max(node_data, function(d) { return parseInt(d['value'], 10); } )]);
+
                     nodes = []
                     for (var i=0; i<node_data.length; i++) {
                         nodes.push({
                             index: i,
+                            sid: node_data[i]['id'],
                             radius: radius(parseInt(node_data[i]['value'], 10)),
                             value: node_data[i]['value'],
                             year: scope.year,
                             x: Math.random() * 900,
                             y: Math.random() * 800,
                             category: node_data[i]['categoria'],
-                            jurisdiction: node_data[i]['juris_ok'],
-                            changeCategory: Math.floor((Math.random()*7) - 3)
+                            jurisdiction: node_data[i]['juris_abrev'],
+                            changeCategory: Math.floor((Math.random()*7) - 3),
+                            positions: find_position(node_data[i]['juris_abrev'])
                         })
                     }
-
+                    console.log(nodes);        //TODO(gb): Remove trace!!!
                     nodes.sort(function(a, b){
                         return Math.abs(b.value) - Math.abs(a.value);
                     });
 
                     bounding_radius = radius(total.value);
-                    
+                    console.log(nodes);        //TODO(gb): Remove trace!!!
                     // Circles
                     circles = svg.selectAll('circles')
                         .data(nodes)
@@ -149,6 +206,7 @@ angular.module('onpApp')
                         .attr('r', 0)
                         .attr('id', function(d) { return d.id })
                         .style('fill', function(d, i) { return fillColor(d.changeCategory) })
+                        .style("stroke-width", 1)
                         .style('stroke', function(d, i) { return strokeColor(d.changeCategory) })
 
                     circles.transition()
