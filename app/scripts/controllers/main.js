@@ -8,7 +8,6 @@ angular.module('onpApp')
             $scope.data = $scope.alldata.filter(function(d) {
                 return parseInt(d.anio) == year;
             })
-            $scope.$apply();
         }
 
         $scope.init = function() {
@@ -16,6 +15,13 @@ angular.module('onpApp')
             d3.csv('data/onp-presupuesto_procesado.csv', function(data) {
                 $scope.alldata = data;
                 $scope.setYear(2013);
+                $scope.$apply()
             })
         }
+
+        $scope.$watch('year', function(y) {
+            if (parseInt(y) > 2002 && parseInt(y) < 2015) {
+                $scope.setYear(y);
+            }
+        })
     });
