@@ -132,6 +132,12 @@ angular.module('onpApp')
         var svg,
             circles;
 
+        /* Initialize tooltip */
+        var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d; });
+
+        /* Invoke the tip in the context of your visualization */
+        svg.call(tip);
+
         // Radius scale
         var radius = d3.scale.pow()
             .exponent(0.5)
