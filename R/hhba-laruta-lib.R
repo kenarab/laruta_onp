@@ -112,10 +112,39 @@ ajustar_juris<-function(data){
   data
 }
 
-
-agregar_indicadores<-function(data_normalizada_ok){
-  
+names(data_normalizada_ok)
+calcular_indicadores<-function(data_normalizada_ok){
+  data_indicadores<-data_normalizada_ok
+  data_indicadores$value_proy<-NA
+  data_indicadores$share_proy<-NA
+  data_indicadores$value_exec<-NA
+  data_indicadores$share_exec<-NA
+  data_indicadores<-data_indicadores[0,]
+  data_indicadores<-data_indicadores[,-c(6,7,8)]
+  for (i in c(1:nrow(data_normalizada_ok))){
+    j<-which(data_indicadores$anio==data_normalizada_ok[i,'anio']
+             &data_indicadores$juris_ok==data_normalizada_ok[i,'juris'])
+    if (length(j)==0){
+      j<-nrow(data_indicadores)+1
+      for (col in names(data_normalizada_ok)[c(1:5)]){
+        #copio columnas originales
+        data_indicadores[j,col]<-data_normalizada_ok[i,col]
+      }
+    }
+    type<-data_normalizada_ok[i,'type']
+    if (type=='PROY'){
+          field_value<-'value_proy'
+          field_share<-'share_proy'
+    }
+    if (type=='EJEC'){
+      field_value<-'value_exec'
+      field_share<-'share_exec'
+    }
+    data_indicadores[j,c(field_value,field_share)]<-data_normalizada_ok[i,c("value","share")]
+  }
+  data_indicadores
 }
+
 
 get_presupuesto_normalizado<-function(data){
   data_normalizada<-data.frame(anio=numeric(),anio_fecha=character(),type=character(),jurisdiccion=character(),
