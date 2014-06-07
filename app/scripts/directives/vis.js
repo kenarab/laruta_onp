@@ -15,18 +15,17 @@ angular.module('onpApp')
                 .nodes(nodes)
                 .size([width, height]),
             layout_gravity = -0.01,
-            default_gravity = 0.1,
             damper = 0.1,
             bounding_radius = null
 
         var positions = [
-            { "name": "Básico", "department": { "x":200, "y":200 } },
-            { "name": "Productivo", "department": { "x":400, "y":200 } },
-            { "name": "Interior", "department": { "x":600, "y":200 } },
-            { "name": "Ejecutivo", "department": { "x":200, "y":400 } },
-            { "name": "Exterior", "department": { "x":350, "y":400 } },
-            { "name": "Financiero", "department": { "x":450, "y":400 } },
-            { "name": "Institucional", "department": { "x":600, "y":400 } }
+            { "name": "Básico", "department": { "x":200, "y":200 }, "title": { "x":-40, "y":-170 } },
+            { "name": "Productivo", "department": { "x":400, "y":200 }, "title": { "x":30, "y":-170 } },
+            { "name": "Interior", "department": { "x":600, "y":200 }, "title": { "x":60, "y":-170 } },
+            { "name": "Ejecutivo", "department": { "x":200, "y":400 }, "title": { "x":-40, "y":-50 } },
+            { "name": "Exterior", "department": { "x":350, "y":400 }, "title": { "x":-20, "y":-50 } },
+            { "name": "Financiero", "department": { "x":450, "y":400 }, "title": { "x":20, "y":-50 } },
+            { "name": "Institucional", "department": { "x":600, "y":400 }, "title": { "x":60, "y":-50 } }
         ]
 
         function find_position(name) {
@@ -102,10 +101,6 @@ angular.module('onpApp')
                 .domain([-3,-2,-1,0,1,2,3])
                 .range(["#c72d0a", "#e67761","#d9a097","#999","#a7bb8f", "#7e965d", "#5a8731"])
 
-        var color = d3.scale.ordinal()
-            .domain([-3, -3])
-            .range(["#d84b2a", "#7aa25c"]);
-
         var changeCategory = d3.scale.ordinal()
             .domain([0.5, 1.5])
             .range([-3,-2,-1,0,1,2,3])
@@ -124,10 +119,32 @@ angular.module('onpApp')
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
+                svg.selectAll(".category-labels")
+                    .data(positions)
+                    .enter().append("text")
+                    .attr("class", "category-labels")
+                    .style("opacity", 0)
+                    .attr("x", function(d) { return d.department.x + d.title.x })
+                    .attr("y", function(d) { return d.department.y + d.title.y })
+                    .attr("text-anchor", "middle")
+                    .text(function(d) { return d.name; })
 
-                scope.$watch('layout', function(layout) {
-                    if (layout == "jurisdiction") {
-                        display_group_category()
+
+                scope.$watch('layout', function(newValue, oldValue) {
+                    if (newValue) {
+                        if (newValue == "jurisdiction") {
+                            display_group_category()
+                            svg.selectAll(".category-labels")
+                                .transition()
+                                .duration(2000)
+                                .style("opacity", 1)
+                        } else {
+                            display_group_all()
+                            svg.selectAll(".category-labels")
+                                .transition()
+                                .duration(200)
+                                .style("opacity", 0)
+                        }
                     }
                 })
 
@@ -160,7 +177,6 @@ angular.module('onpApp')
                             positions: find_position(node_data[i]['categoria'])
                         })
                     }
-                    console.log(nodes);        //TODO(gb): Remove trace!!!
                     nodes.sort(function(a, b){
                         return Math.abs(b.value) - Math.abs(a.value);
                     });
@@ -183,6 +199,7 @@ angular.module('onpApp')
 
                     circles.exit().remove()
 
+                    scope.layout = "all";
                     display_group_all();
                 });
             }
