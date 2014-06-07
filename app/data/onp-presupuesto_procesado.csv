@@ -1,0 +1,437 @@
+"","categoria","juris_ok","juris_abrev","anio","type","value","share"
+"8","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2003,"EJEC",132950031,0.00242199441861895
+"218","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2003,"PROY",46088071,0.000696478473375271
+"2","Exterior","Ministerio de Defensa","Defensa",2003,"EJEC",4368313655,0.0795790058235258
+"211","Exterior","Ministerio de Defensa","Defensa",2003,"PROY",4474565360,0.0676191991405037
+"3","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2003,"EJEC",1585542133,0.0288843422429227
+"212","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2003,"PROY",1694950007,0.0256139206460337
+"5","Productivo","Ministerio de Economía","Economía",2003,"EJEC",814412463,0.0148364195555525
+"214","Productivo","Ministerio de Economía","Economía",2003,"PROY",877023814,0.0132534990906536
+"6","Básico","Ministerio de Educación","Educación",2003,"EJEC",3087748570,0.0562505307173538
+"215","Básico","Ministerio de Educación","Educación",2003,"PROY",2788159048,0.042134389987346
+"9","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2003,"EJEC",3352239510,0.0610688491159052
+"219","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2003,"PROY",2920455301,0.0441336381729059
+"7","Interior","Ministerio del Interior","Interior",2003,"EJEC",455422758,0.00829658609096562
+"217","Interior","Ministerio del Interior","Interior",2003,"PROY",263223531,0.00397780855326595
+"12","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2003,"EJEC",2376873991,0.0433002948300369
+"216","Productivo","Ministerio de Producción","Industria",2003,"PROY",551912837,0.00834045343642122
+"1","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2003,"EJEC",587661987,0.0107056315958928
+"210","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2003,"PROY",702580922,0.0106173349710633
+"16","Básico","Ministerio de Salud","Salud",2003,"EJEC",1246191750,0.0227022847631301
+"225","Básico","Ministerio de Salud","Salud",2003,"PROY",1299232320,0.0196338732162041
+"18","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2003,"EJEC",23601802589,0.429961796247375
+"227","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2003,"PROY",25279845621,0.38202658308864
+"10","Institucional","Ministerio Público","Ministerio Público",2003,"EJEC",155377877,0.00283056986177658
+"220","Institucional","Ministerio Público","Ministerio Público",2003,"PROY",151011640,0.00228207330458886
+"11","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2003,"EJEC",3852137414,0.0701756535616094
+"221","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2003,"PROY",6817520809,0.10302571537994
+"13","Institucional","Poder Judicial de la Nación","Poder Judicial",2003,"EJEC",677988405,0.0123511376450778
+"222","Institucional","Poder Judicial de la Nación","Poder Judicial",2003,"PROY",731179133,0.0110495083709556
+"14","Institucional","Poder Legislativo Nacional","Poder Legislativo",2003,"EJEC",453121533,0.00825466391867228
+"223","Institucional","Poder Legislativo Nacional","Poder Legislativo",2003,"PROY",427264787,0.00645678415520516
+"15","Ejecutivo","Presidencia de la Nación","Presidencia",2003,"EJEC",584456520,0.0106472365498392
+"224","Ejecutivo","Presidencia de la Nación","Presidencia",2003,"PROY",2397218142,0.0362265288101918
+"4","Financiero","Servicio de la Deuda Pública","Deuda Publica",2003,"EJEC",7560548813,0.137733003061745
+"213","Financiero","Servicio de la Deuda Pública","Deuda Publica",2003,"PROY",14750770066,0.222912211202706
+"17","TOTAL","TOTAL","TOTAL",2003,"EJEC",54892789999,1
+"226","TOTAL","TOTAL","TOTAL",2003,"PROY",66173001409,1
+"26","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2004,"EJEC",225093362,0.00332342172843379
+"235","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2004,"PROY",182382000,0.0030545332613115
+"20","Exterior","Ministerio de Defensa","Defensa",2004,"EJEC",4672319270,0.068985096877703
+"229","Exterior","Ministerio de Defensa","Defensa",2004,"PROY",4489403666,0.0751885209135266
+"21","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2004,"EJEC",2673264921,0.039469785538639
+"230","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2004,"PROY",2567848828,0.0430063254879635
+"23","Productivo","Ministerio de Economía","Economía",2004,"EJEC",1131665044,0.0167086233157714
+"232","Productivo","Ministerio de Economía","Economía",2004,"PROY",928410305,0.0155490133717519
+"24","Básico","Ministerio de Educación","Educación",2004,"EJEC",4106922408,0.0606372175814709
+"233","Básico","Ministerio de Educación","Educación",2004,"PROY",3697727622,0.0619295325891223
+"27","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2004,"EJEC",473117073,0.00698540173077691
+"236","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2004,"PROY",3557543077,0.0595817221943228
+"25","Interior","Ministerio del Interior","Interior",2004,"EJEC",3604418071,0.0532179235721789
+"234","Interior","Ministerio del Interior","Interior",2004,"PROY",221593000,0.00371123898725642
+"30","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2004,"EJEC",5641177650,0.0832899389363825
+"239","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2004,"PROY",3380532470,0.0566171490089951
+"19","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2004,"EJEC",675034662,0.00996664158908762
+"228","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2004,"PROY",630614323,0.0105615270402942
+"34","Básico","Ministerio de Salud","Salud",2004,"EJEC",1773321527,0.0261824482160037
+"243","Básico","Ministerio de Salud","Salud",2004,"PROY",1455752722,0.0243809427991455
+"36","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2004,"EJEC",27102185227,0.400153920449457
+"245","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2004,"PROY",25295031498,0.423641121692728
+"28","Institucional","Ministerio Público","Ministerio Público",2004,"EJEC",192213000,0.00283795512675955
+"237","Institucional","Ministerio Público","Ministerio Público",2004,"PROY",162410000,0.00272004225729294
+"29","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2004,"EJEC",6774830003,0.100027904147681
+"238","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2004,"PROY",4578284818,0.0766771022158902
+"31","Institucional","Poder Judicial de la Nación","Poder Judicial",2004,"EJEC",829589880,0.0122485932431929
+"240","Institucional","Poder Judicial de la Nación","Poder Judicial",2004,"PROY",726072905,0.0121602671231786
+"32","Institucional","Poder Legislativo Nacional","Poder Legislativo",2004,"EJEC",465473338,0.00687254475996411
+"241","Institucional","Poder Legislativo Nacional","Poder Legislativo",2004,"PROY",427755988,0.00716405617369677
+"33","Ejecutivo","Presidencia de la Nación","Presidencia",2004,"EJEC",637433752,0.00941147781085554
+"242","Ejecutivo","Presidencia de la Nación","Presidencia",2004,"PROY",601926452,0.0100810626514526
+"22","Financiero","Servicio de la Deuda Pública","Deuda Publica",2004,"EJEC",6751341530,0.0996811053756414
+"231","Financiero","Servicio de la Deuda Pública","Deuda Publica",2004,"PROY",6805341530,0.113975842232071
+"35","TOTAL","TOTAL","TOTAL",2004,"EJEC",67729400718,1
+"244","TOTAL","TOTAL","TOTAL",2004,"PROY",59708631204,1
+"44","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2005,"EJEC",262593937,0.00313882474022081
+"253","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2005,"PROY",228074000,0.0029446399503566
+"38","Exterior","Ministerio de Defensa","Defensa",2005,"EJEC",5163893187,0.0617247902841462
+"247","Exterior","Ministerio de Defensa","Defensa",2005,"PROY",5042600557,0.0651044970221622
+"39","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2005,"EJEC",3081449140,0.0368330240479396
+"248","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2005,"PROY",3220645701,0.0415814253141911
+"41","Productivo","Ministerio de Economía","Economía",2005,"EJEC",1403404876,0.0167751091120406
+"250","Productivo","Ministerio de Economía","Economía",2005,"PROY",1266304703,0.0163491297463904
+"42","Básico","Ministerio de Educación","Educación",2005,"EJEC",5344849166,0.0638877842598071
+"251","Básico","Ministerio de Educación","Educación",2005,"PROY",4773187473,0.0616261324111361
+"45","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2005,"EJEC",627341249,0.00749870410344708
+"254","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2005,"PROY",577343273,0.0074540196021705
+"43","Interior","Ministerio del Interior","Interior",2005,"EJEC",4237228405,0.05064822706695
+"252","Interior","Ministerio del Interior","Interior",2005,"PROY",3905459627,0.0504229874609511
+"48","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2005,"EJEC",8169970073,0.0976568784678225
+"257","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2005,"PROY",7183120244,0.0927405264900761
+"37","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2005,"EJEC",791704880,0.00946336725321099
+"246","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2005,"PROY",738234242,0.00953126635089672
+"52","Básico","Ministerio de Salud","Salud",2005,"EJEC",1833784898,0.0219195061083444
+"261","Básico","Ministerio de Salud","Salud",2005,"PROY",1711368266,0.0220952996213338
+"54","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2005,"EJEC",31654186518,0.378367242250009
+"263","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2005,"PROY",29050197000,0.375064104860393
+"46","Institucional","Ministerio Público","Ministerio Público",2005,"EJEC",252357831,0.00301647102892274
+"255","Institucional","Ministerio Público","Ministerio Público",2005,"PROY",194086000,0.00250582437895118
+"47","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2005,"EJEC",7491378298,0.0895455691351917
+"256","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2005,"PROY",7586719000,0.0979513485076311
+"49","Institucional","Poder Judicial de la Nación","Poder Judicial",2005,"EJEC",1095460933,0.0130942089437723
+"258","Institucional","Poder Judicial de la Nación","Poder Judicial",2005,"PROY",884290933,0.0114169892624758
+"50","Institucional","Poder Legislativo Nacional","Poder Legislativo",2005,"EJEC",560161591,0.0066956955687528
+"259","Institucional","Poder Legislativo Nacional","Poder Legislativo",2005,"PROY",476377040,0.00615045495504364
+"51","Ejecutivo","Presidencia de la Nación","Presidencia",2005,"EJEC",777127487,0.00928912148684235
+"260","Ejecutivo","Presidencia de la Nación","Presidencia",2005,"PROY",697500475,0.00900535687574078
+"40","Financiero","Servicio de la Deuda Pública","Deuda Publica",2005,"EJEC",10913062684,0.13044547614258
+"249","Financiero","Servicio de la Deuda Pública","Deuda Publica",2005,"PROY",9918443000,0.128055997190099
+"53","TOTAL","TOTAL","TOTAL",2005,"EJEC",83659955153,1
+"262","TOTAL","TOTAL","TOTAL",2005,"PROY",77453951534,1
+"62","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2006,"EJEC",374740651,0.00354425235557657
+"271","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2006,"PROY",311833969,0.00332791829609415
+"56","Exterior","Ministerio de Defensa","Defensa",2006,"EJEC",6090473385,0.0576029704377138
+"265","Exterior","Ministerio de Defensa","Defensa",2006,"PROY",5713924487,0.0609794818177351
+"57","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2006,"EJEC",4155129603,0.0392987199116508
+"266","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2006,"PROY",3559303905,0.0379851900830241
+"59","Productivo","Ministerio de Economía","Economía",2006,"EJEC",1739258676,0.0164497009943284
+"268","Productivo","Ministerio de Economía","Economía",2006,"PROY",1727124130,0.0184320137100031
+"60","Básico","Ministerio de Educación","Educación",2006,"EJEC",7088042607,0.0670378610893933
+"269","Básico","Ministerio de Educación","Educación",2006,"PROY",6054805761,0.0646173953913538
+"63","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2006,"EJEC",810307084,0.00766378769835509
+"272","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2006,"PROY",640139923,0.00683162699895597
+"61","Interior","Ministerio del Interior","Interior",2006,"EJEC",4902514829,0.0463674001861418
+"270","Interior","Ministerio del Interior","Interior",2006,"PROY",4441310147,0.0473980347433858
+"66","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2006,"EJEC",13806707016,0.130582187263728
+"275","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2006,"PROY",10578858420,0.112898465169161
+"55","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2006,"EJEC",949265852,0.0089780431427478
+"264","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2006,"PROY",842887084,0.00899536172207411
+"70","Básico","Ministerio de Salud","Salud",2006,"EJEC",2160343505,0.0204322710547108
+"279","Básico","Ministerio de Salud","Salud",2006,"PROY",2110819511,0.0225268430278338
+"72","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2006,"EJEC",37453887149,0.354234394905137
+"281","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2006,"PROY",35058485345,0.374147098813902
+"64","Institucional","Ministerio Público","Ministerio Público",2006,"EJEC",302346650,0.00285955853362485
+"273","Institucional","Ministerio Público","Ministerio Público",2006,"PROY",290978650,0.00310534858089106
+"65","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2006,"EJEC",10367812863,0.0980575367625776
+"274","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2006,"PROY",9209550000,0.0982850907554394
+"67","Institucional","Poder Judicial de la Nación","Poder Judicial",2006,"EJEC",1337164887,0.0126467459238737
+"276","Institucional","Poder Judicial de la Nación","Poder Judicial",2006,"PROY",1216666875,0.0129843710309963
+"68","Institucional","Poder Legislativo Nacional","Poder Legislativo",2006,"EJEC",642066465,0.00607258800170299
+"277","Institucional","Poder Legislativo Nacional","Poder Legislativo",2006,"PROY",594680531,0.00634648055114831
+"69","Ejecutivo","Presidencia de la Nación","Presidencia",2006,"EJEC",983428328,0.00930114776380298
+"278","Ejecutivo","Presidencia de la Nación","Presidencia",2006,"PROY",845599576,0.00902430966441586
+"58","Financiero","Servicio de la Deuda Pública","Deuda Publica",2006,"EJEC",12568443000,0.118870833974934
+"267","Financiero","Servicio de la Deuda Pública","Deuda Publica",2006,"PROY",10505443000,0.112114969643587
+"71","TOTAL","TOTAL","TOTAL",2006,"EJEC",105731932550,1
+"280","TOTAL","TOTAL","TOTAL",2006,"PROY",93702411314,1
+"80","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2007,"EJEC",706889551,0.00507391189045658
+"289","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2007,"PROY",624857600,0.00515121012837354
+"74","Exterior","Ministerio de Defensa","Defensa",2007,"EJEC",7489193104,0.0537559310171654
+"283","Exterior","Ministerio de Defensa","Defensa",2007,"PROY",6488279693,0.0534881740580605
+"75","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2007,"EJEC",6032249080,0.0432982780547675
+"284","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2007,"PROY",5456457880,0.0449820264593079
+"77","Productivo","Ministerio de Economía","Economía",2007,"EJEC",3024936262,0.021712387806444
+"286","Productivo","Ministerio de Economía","Economía",2007,"PROY",1952777193,0.0160983328922277
+"78","Básico","Ministerio de Educación","Educación",2007,"EJEC",8814380994,0.0632678647876507
+"287","Básico","Ministerio de Educación","Educación",2007,"PROY",8040563251,0.0662849117244942
+"81","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2007,"EJEC",864836461,0.0062076232369833
+"290","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2007,"PROY",812836777,0.00670087558892923
+"79","Interior","Ministerio del Interior","Interior",2007,"EJEC",6082771064,0.0436609147566178
+"288","Interior","Ministerio del Interior","Interior",2007,"PROY",5421108487,0.0446906126215736
+"84","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2007,"EJEC",22640555384,0.162509380718542
+"293","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2007,"PROY",15009465360,0.123735247813108
+"73","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2007,"EJEC",1127105438,0.00809013752654334
+"282","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2007,"PROY",1054529518,0.00869334570595039
+"88","Básico","Ministerio de Salud","Salud",2007,"EJEC",2616936120,0.0187838443460502
+"297","Básico","Ministerio de Salud","Salud",2007,"PROY",2470872869,0.020369417526035
+"90","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2007,"EJEC",54960914151,0.394498455135776
+"299","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2007,"PROY",45389127678,0.374179547808898
+"82","Institucional","Ministerio Público","Ministerio Público",2007,"EJEC",410340260,0.00294534035961022
+"291","Institucional","Ministerio Público","Ministerio Público",2007,"PROY",383057815,0.0031578575604756
+"83","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2007,"EJEC",4312203683,0.0309521360307169
+"292","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2007,"PROY",10962403659,0.0903720219767831
+"85","Institucional","Poder Judicial de la Nación","Poder Judicial",2007,"EJEC",1723030105,0.0123675656614341
+"294","Institucional","Poder Judicial de la Nación","Poder Judicial",2007,"PROY",1565098881,0.0129023848116968
+"86","Institucional","Poder Legislativo Nacional","Poder Legislativo",2007,"EJEC",784793861,0.00563309345463112
+"295","Institucional","Poder Legislativo Nacional","Poder Legislativo",2007,"PROY",697841861,0.00575287883573192
+"87","Ejecutivo","Presidencia de la Nación","Presidencia",2007,"EJEC",1089278647,0.00781862438228876
+"296","Ejecutivo","Presidencia de la Nación","Presidencia",2007,"PROY",996347937,0.00821370754626091
+"76","Financiero","Servicio de la Deuda Pública","Deuda Publica",2007,"EJEC",16638038000,0.119424510834322
+"285","Financiero","Servicio de la Deuda Pública","Deuda Publica",2007,"PROY",13977443000,0.115227446942093
+"89","TOTAL","TOTAL","TOTAL",2007,"EJEC",139318452165,1
+"298","TOTAL","TOTAL","TOTAL",2007,"PROY",121303069459,1
+"99","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2008,"EJEC",1013461074,0.00501239908861603
+"307","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2008,"PROY",872276301,0.00540154443448102
+"92","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2008,"EJEC",1244953129,0.00615731781837462
+"93","Exterior","Ministerio de Defensa","Defensa",2008,"EJEC",9491644375,0.0469439930504104
+"301","Exterior","Ministerio de Defensa","Defensa",2008,"PROY",8224876573,0.0509322977435581
+"94","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2008,"EJEC",8541256441,0.0422435425482402
+"302","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2008,"PROY",7510322002,0.0465074403197198
+"96","Productivo","Ministerio de Economía","Economía",2008,"EJEC",6841362760,0.0338361692845005
+"304","Productivo","Ministerio de Economía","Economía",2008,"PROY",3805858211,0.0235676610891334
+"97","Básico","Ministerio de Educación","Educación",2008,"EJEC",11554388702,0.0571459613844233
+"305","Básico","Ministerio de Educación","Educación",2008,"PROY",10442284472,0.0646635286414817
+"100","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2008,"EJEC",8484340641,0.0419620470755805
+"308","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2008,"PROY",1107083280,0.00685557950242993
+"98","Interior","Ministerio del Interior","Interior",2008,"EJEC",654617165,0.00323762063034935
+"306","Interior","Ministerio del Interior","Interior",2008,"PROY",6975772479,0.0431972586747468
+"103","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2008,"EJEC",35131874786,0.173756034322754
+"311","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2008,"PROY",23235933885,0.143887813084688
+"91","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2008,"EJEC",1404553283,0.00694667193070886
+"300","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2008,"PROY",1335097563,0.00826755100722589
+"107","Básico","Ministerio de Salud","Salud",2008,"EJEC",4094968420,0.0202529889927666
+"315","Básico","Ministerio de Salud","Salud",2008,"PROY",3538973887,0.0219149880389775
+"109","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2008,"EJEC",73153649634,0.361805002837631
+"317","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2008,"PROY",63254660794,0.391702560960458
+"101","Institucional","Ministerio Público","Ministerio Público",2008,"EJEC",560974590,0.002774481029207
+"309","Institucional","Ministerio Público","Ministerio Público",2008,"PROY",524694369,0.00324915390390216
+"102","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2008,"EJEC",14274879361,0.0706010266549026
+"310","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2008,"PROY",7417130338,0.0459303537779416
+"104","Institucional","Poder Judicial de la Nación","Poder Judicial",2008,"EJEC",2209342145,0.0109270151939146
+"312","Institucional","Poder Judicial de la Nación","Poder Judicial",2008,"PROY",1892359145,0.0117183763860094
+"105","Institucional","Poder Legislativo Nacional","Poder Legislativo",2008,"EJEC",1106426970,0.00547219195519709
+"313","Institucional","Poder Legislativo Nacional","Poder Legislativo",2008,"PROY",873668449,0.00541016526858227
+"106","Ejecutivo","Presidencia de la Nación","Presidencia",2008,"EJEC",1559558949,0.00771330251862301
+"314","Ejecutivo","Presidencia de la Nación","Presidencia",2008,"PROY",1406917426,0.00871229332204988
+"95","Financiero","Servicio de la Deuda Pública","Deuda Publica",2008,"EJEC",20868566000,0.103212233683801
+"303","Financiero","Servicio de la Deuda Pública","Deuda Publica",2008,"PROY",19068553000,0.118081433844614
+"108","TOTAL","TOTAL","TOTAL",2008,"EJEC",202190818425,1
+"316","TOTAL","TOTAL","TOTAL",2008,"PROY",161486462174,1
+"119","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2009,"EJEC",1930116667,0.00794012265056589
+"326","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2009,"PROY",1169296352,0.00500089156654571
+"111","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2009,"EJEC",1835066193,0.00754910358189608
+"319","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2009,"PROY",1766268663,0.00755404568392143
+"112","Exterior","Ministerio de Defensa","Defensa",2009,"EJEC",11648270427,0.0479187074225392
+"320","Exterior","Ministerio de Defensa","Defensa",2009,"PROY",10703079840,0.0457753431081614
+"113","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2009,"EJEC",11324464714,0.0465866340198624
+"321","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2009,"PROY",10285197869,0.0439881294381529
+"115","Productivo","Ministerio de Economía","Economía",2009,"EJEC",1103574679,0.00453989049218385
+"323","Productivo","Ministerio de Economía","Economía",2009,"PROY",7809546982,0.0334001706017692
+"116","Básico","Ministerio de Educación","Educación",2009,"EJEC",14461120457,0.0594902225634154
+"324","Básico","Ministerio de Educación","Educación",2009,"PROY",12687203343,0.054261118742513
+"120","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2009,"EJEC",11651437760,0.047931737211321
+"327","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2009,"PROY",9719549281,0.0415689418228668
+"118","Interior","Ministerio del Interior","Interior",2009,"EJEC",1283561550,0.00528032129394096
+"325","Interior","Ministerio del Interior","Interior",2009,"PROY",994192270,0.00425199970055832
+"123","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2009,"EJEC",38180082474,0.157065395494189
+"330","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2009,"PROY",36215432725,0.154887554197429
+"117","Productivo","Ministerio de Producción","Industria",2009,"EJEC",5899414038,0.0242690360790456
+"110","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2009,"EJEC",1748233088,0.00719188916288321
+"318","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2009,"PROY",1634844897,0.00699196747174799
+"127","Básico","Ministerio de Salud","Salud",2009,"EJEC",6101413225,0.0251000212456508
+"334","Básico","Ministerio de Salud","Salud",2009,"PROY",4758018214,0.0203492751167529
+"129","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2009,"EJEC",90223318159,0.371161093198046
+"336","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2009,"PROY",89560647452,0.383036418245048
+"121","Institucional","Ministerio Público","Ministerio Público",2009,"EJEC",736730458,0.00303076508116987
+"328","Institucional","Ministerio Público","Ministerio Público",2009,"PROY",708122458,0.00302852533682908
+"122","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2009,"EJEC",14662872967,0.0603201929490654
+"329","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2009,"PROY",15718691130,0.0672263021899464
+"124","Institucional","Poder Judicial de la Nación","Poder Judicial",2009,"EJEC",2913344769,0.0119849308514595
+"331","Institucional","Poder Judicial de la Nación","Poder Judicial",2009,"PROY",2577064365,0.0110216878957423
+"125","Institucional","Poder Legislativo Nacional","Poder Legislativo",2009,"EJEC",1430752743,0.00588583708761558
+"332","Institucional","Poder Legislativo Nacional","Poder Legislativo",2009,"PROY",1201232743,0.00513747835067844
+"126","Ejecutivo","Presidencia de la Nación","Presidencia",2009,"EJEC",1447499686,0.00595473073726668
+"333","Ejecutivo","Presidencia de la Nación","Presidencia",2009,"PROY",1796636030,0.00768392200592375
+"114","Financiero","Servicio de la Deuda Pública","Deuda Publica",2009,"EJEC",24502712421,0.100799368877884
+"322","Financiero","Servicio de la Deuda Pública","Deuda Publica",2009,"PROY",24512553000,0.104836228525414
+"128","TOTAL","TOTAL","TOTAL",2009,"EJEC",243083986475,1
+"335","TOTAL","TOTAL","TOTAL",2009,"PROY",233817577614,1
+"139","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2010,"EJEC",2656992081,0.00843167941143071
+"346","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2010,"PROY",2391758879,0.00875687007536332
+"131","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2010,"EJEC",2236169224,0.00709624320723588
+"338","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2010,"PROY",2115730407,0.00774625588359509
+"132","Exterior","Ministerio de Defensa","Defensa",2010,"EJEC",13918995872,0.0441704406125144
+"339","Exterior","Ministerio de Defensa","Defensa",2010,"PROY",12605512883,0.046152160035422
+"133","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2010,"EJEC",16373441112,0.051959359346816
+"340","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2010,"PROY",14393319144,0.052697797760427
+"135","Productivo","Ministerio de Economía","Economía",2010,"EJEC",8827875265,0.0280143153797299
+"342","Productivo","Ministerio de Economía","Economía",2010,"PROY",1376158919,0.00503848651406446
+"136","Básico","Ministerio de Educación","Educación",2010,"EJEC",17537495960,0.0556533625641548
+"343","Básico","Ministerio de Educación","Educación",2010,"PROY",15612757604,0.0571624886842821
+"140","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2010,"EJEC",16829687634,0.053407208752764
+"347","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2010,"PROY",13282001363,0.0486289656109559
+"138","Interior","Ministerio del Interior","Interior",2010,"EJEC",1306297208,0.00414539409156147
+"345","Interior","Ministerio del Interior","Interior",2010,"PROY",1045320409,0.00382719808803045
+"143","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2010,"EJEC",50467173086,0.160152161274859
+"350","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2010,"PROY",38830177976,0.142167685264843
+"137","Productivo","Ministerio de Producción","Industria",2010,"EJEC",780644674,0.0024772921502015
+"344","Productivo","Ministerio de Producción","Industria",2010,"PROY",6278510432,0.0229873088807449
+"130","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2010,"EJEC",2087509529,0.00662448760863835
+"337","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2010,"PROY",1986021035,0.00727135511992118
+"147","Básico","Ministerio de Salud","Salud",2010,"EJEC",6445304778,0.0204534834656357
+"354","Básico","Ministerio de Salud","Salud",2010,"PROY",5665272366,0.0207420800174264
+"149","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2010,"EJEC",119592974467,0.379515478339569
+"356","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2010,"PROY",104660679764,0.383190790150112
+"141","Institucional","Ministerio Público","Ministerio Público",2010,"EJEC",964388205,0.00306038253966671
+"348","Institucional","Ministerio Público","Ministerio Público",2010,"PROY",863101629,0.0031600463129241
+"142","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2010,"EJEC",19062640896,0.060493246449499
+"349","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2010,"PROY",18972114000,0.0694619925159193
+"144","Institucional","Poder Judicial de la Nación","Poder Judicial",2010,"EJEC",3873390444,0.0122917891598741
+"351","Institucional","Poder Judicial de la Nación","Poder Judicial",2010,"PROY",3249380272,0.0118968517759824
+"145","Institucional","Poder Legislativo Nacional","Poder Legislativo",2010,"EJEC",1943998378,0.00616907036225272
+"352","Institucional","Poder Legislativo Nacional","Poder Legislativo",2010,"PROY",1532091129,0.0056093961134908
+"146","Ejecutivo","Presidencia de la Nación","Presidencia",2010,"EJEC",1939618201,0.00615517034030933
+"353","Ejecutivo","Presidencia de la Nación","Presidencia",2010,"PROY",1693962706,0.00620205132682728
+"134","Financiero","Servicio de la Deuda Pública","Deuda Publica",2010,"EJEC",28275553000,0.0897294349432868
+"341","Financiero","Servicio de la Deuda Pública","Deuda Publica",2010,"PROY",26575553000,0.0973002198696685
+"148","TOTAL","TOTAL","TOTAL",2010,"EJEC",315120150014,1
+"355","TOTAL","TOTAL","TOTAL",2010,"PROY",273129423917,1
+"159","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2011,"EJEC",3315935956,0.00779656647183906
+"366","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2011,"PROY",3059055188,0.00820315706284592
+"151","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2011,"EJEC",2685146136,0.00631342722347976
+"358","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2011,"PROY",2571677971,0.00689620716681686
+"152","Exterior","Ministerio de Defensa","Defensa",2011,"EJEC",16829113718,0.0395693118038392
+"359","Exterior","Ministerio de Defensa","Defensa",2011,"PROY",15162538284,0.0406598362471472
+"153","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2011,"EJEC",22352904255,0.0525570777527893
+"360","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2011,"PROY",18696338105,0.0501360676907755
+"155","Productivo","Ministerio de Economía","Economía",2011,"EJEC",9868835797,0.0232040169991073
+"362","Productivo","Ministerio de Economía","Economía",2011,"PROY",9523374237,0.0255378637629114
+"156","Básico","Ministerio de Educación","Educación",2011,"EJEC",23350104655,0.0549017367894864
+"363","Básico","Ministerio de Educación","Educación",2011,"PROY",19961415426,0.0535284968308304
+"160","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2011,"EJEC",22141396583,0.0520597721214582
+"367","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2011,"PROY",19482049473,0.052243029926387
+"158","Interior","Ministerio del Interior","Interior",2011,"EJEC",3289166778,0.00773362566766103
+"365","Interior","Ministerio del Interior","Interior",2011,"PROY",2305969260,0.00618368315030038
+"163","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2011,"EJEC",69745860602,0.163989366964455
+"370","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2011,"PROY",54049525923,0.144939114553409
+"157","Productivo","Ministerio de Producción","Industria",2011,"EJEC",997512809,0.00234539358572563
+"364","Productivo","Ministerio de Producción","Industria",2011,"PROY",938175702,0.00251581032805209
+"150","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2011,"EJEC",2305995171,0.0054219517122789
+"357","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2011,"PROY",2311955209,0.00619973506071044
+"167","Básico","Ministerio de Salud","Salud",2011,"EJEC",8621184476,0.0202704873450581
+"374","Básico","Ministerio de Salud","Salud",2011,"PROY",7390710037,0.0198189151595858
+"169","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2011,"EJEC",160342465987,0.377003871882452
+"376","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2011,"PROY",146734274421,0.393482374656066
+"161","Institucional","Ministerio Público","Ministerio Público",2011,"EJEC",1418811865,0.00333596944069159
+"368","Institucional","Ministerio Público","Ministerio Público",2011,"PROY",1147501540,0.00307713813055849
+"162","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2011,"EJEC",31854083571,0.0748966455493322
+"369","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2011,"PROY",24596655000,0.0659583471972439
+"164","Institucional","Poder Judicial de la Nación","Poder Judicial",2011,"EJEC",5089730114,0.0119671850373705
+"371","Institucional","Poder Judicial de la Nación","Poder Judicial",2011,"PROY",4572460472,0.0122615020358602
+"165","Institucional","Poder Legislativo Nacional","Poder Legislativo",2011,"EJEC",2586875438,0.00608236907297337
+"372","Institucional","Poder Legislativo Nacional","Poder Legislativo",2011,"PROY",2255135853,0.00604736837464797
+"166","Ejecutivo","Presidencia de la Nación","Presidencia",2011,"EJEC",2246535947,0.00528214871293534
+"373","Ejecutivo","Presidencia de la Nación","Presidencia",2011,"PROY",1887571677,0.00506170892063372
+"154","Financiero","Servicio de la Deuda Pública","Deuda Publica",2011,"EJEC",36265553000,0.0852690758670679
+"361","Financiero","Servicio de la Deuda Pública","Deuda Publica",2011,"PROY",36265553000,0.0972496437452186
+"168","TOTAL","TOTAL","TOTAL",2011,"EJEC",425307212858,1
+"375","TOTAL","TOTAL","TOTAL",2011,"PROY",372911936778,1
+"179","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2012,"EJEC",4155235927,0.00768560698131426
+"386","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2012,"PROY",3533561110,0.00699535057458179
+"171","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2012,"EJEC",3641537626,0.00673546039088821
+"378","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2012,"PROY",3096516115,0.00613013758923417
+"172","Exterior","Ministerio de Defensa","Defensa",2012,"EJEC",22112595794,0.0408998968037048
+"379","Exterior","Ministerio de Defensa","Defensa",2012,"PROY",19695697474,0.0389913473553978
+"173","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2012,"EJEC",31202093976,0.0577120133505164
+"380","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2012,"PROY",27485352894,0.0544124392289415
+"175","Productivo","Ministerio de Economía","Economía",2012,"EJEC",11280362592,0.020864382916381
+"382","Productivo","Ministerio de Economía","Economía",2012,"PROY",11472460641,0.0227118993102362
+"176","Básico","Ministerio de Educación","Educación",2012,"EJEC",30732396007,0.0568432506489333
+"383","Básico","Ministerio de Educación","Educación",2012,"PROY",27385849907,0.0542154543019473
+"180","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2012,"EJEC",27617491521,0.0510818613838446
+"387","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2012,"PROY",26516537511,0.0524944864795315
+"178","Interior","Ministerio del Interior","Interior",2012,"EJEC",24227752902,0.0448121334423493
+"385","Interior","Ministerio del Interior","Interior",2012,"PROY",2272504923,0.00449885204301674
+"183","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2012,"EJEC",55747381771,0.103111465643907
+"390","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2012,"PROY",75535345412,0.149536460663919
+"177","Productivo","Ministerio de Producción","Industria",2012,"EJEC",1377579754,0.0025479989008238
+"384","Productivo","Ministerio de Producción","Industria",2012,"PROY",1383423092,0.00273874689590749
+"170","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2012,"EJEC",3134891992,0.00579835855356026
+"377","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2012,"PROY",2874140502,0.00568990312780935
+"187","Básico","Ministerio de Salud","Salud",2012,"EJEC",11156577257,0.0206354270997742
+"394","Básico","Ministerio de Salud","Salud",2012,"PROY",10136984186,0.020068071824025
+"189","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2012,"EJEC",209690381315,0.387847498159402
+"396","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2012,"PROY",194094026415,0.384245727451156
+"181","Institucional","Ministerio Público","Ministerio Público",2012,"EJEC",1842282422,0.0034075221943651
+"388","Institucional","Ministerio Público","Ministerio Público",2012,"PROY",1674927925,0.00331583568467897
+"182","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2012,"EJEC",44091591692,0.0815526845836528
+"389","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2012,"PROY",41132062037,0.081428673467674
+"184","Institucional","Poder Judicial de la Nación","Poder Judicial",2012,"EJEC",6751516428,0.0124877390129224
+"391","Institucional","Poder Judicial de la Nación","Poder Judicial",2012,"PROY",6007830723,0.0118936338701464
+"185","Institucional","Poder Legislativo Nacional","Poder Legislativo",2012,"EJEC",3928206103,0.00726568810523718
+"392","Institucional","Poder Legislativo Nacional","Poder Legislativo",2012,"PROY",3078353103,0.00609418048180768
+"186","Ejecutivo","Presidencia de la Nación","Presidencia",2012,"EJEC",2951752971,0.00545962097931021
+"393","Ejecutivo","Presidencia de la Nación","Presidencia",2012,"PROY",2744379465,0.00543301668479089
+"174","Financiero","Servicio de la Deuda Pública","Deuda Publica",2012,"EJEC",4.501e+10,0.0832513908491133
+"381","Financiero","Servicio de la Deuda Pública","Deuda Publica",2012,"PROY",4.501e+10,0.0891057829651986
+"188","TOTAL","TOTAL","TOTAL",2012,"EJEC",540651628050,1
+"395","TOTAL","TOTAL","TOTAL",2012,"PROY",505129953435,1
+"199","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2013,"EJEC",5502508374,0.00762970444644312
+"406","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2013,"PROY",4556667247,0.00724857692790854
+"191","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2013,"EJEC",4874977264,0.00675957821040291
+"398","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2013,"PROY",4118942754,0.00655226107056143
+"192","Exterior","Ministerio de Defensa","Defensa",2013,"EJEC",30546071634,0.0423547739915352
+"399","Exterior","Ministerio de Defensa","Defensa",2013,"PROY",26312076424,0.0418562734020004
+"193","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2013,"EJEC",40809743306,0.0565862437268125
+"400","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2013,"PROY",35878957029,0.0570749115571377
+"195","Productivo","Ministerio de Economía","Economía",2013,"EJEC",18539453344,0.0257065578094732
+"402","Productivo","Ministerio de Economía","Economía",2013,"PROY",12340924710,0.0196314844321487
+"196","Básico","Ministerio de Educación","Educación",2013,"EJEC",38519934499,0.0534112254898893
+"403","Básico","Ministerio de Educación","Educación",2013,"PROY",34462285499,0.0548213231316182
+"200","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2013,"EJEC",38235277735,0.0530165242317753
+"407","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2013,"PROY",31265371892,0.0497357917649217
+"198","Interior","Ministerio del Interior","Interior",2013,"EJEC",28384176130,0.0393571186281098
+"405","Interior","Ministerio del Interior","Interior",2013,"PROY",25885818928,0.0411781988173601
+"203","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2013,"EJEC",76232918656,0.105703544438626
+"410","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2013,"PROY",57087463470,0.0908126154820502
+"197","Productivo","Ministerio de Producción","Industria",2013,"EJEC",1580013037,0.00219082492464681
+"404","Productivo","Ministerio de Producción","Industria",2013,"PROY",1544298322,0.00245661238354126
+"190","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2013,"EJEC",2884920659,0.00400019236383409
+"397","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2013,"PROY",3644167927,0.00579700691870083
+"207","Básico","Ministerio de Salud","Salud",2013,"EJEC",14716629993,0.0204058821291037
+"414","Básico","Ministerio de Salud","Salud",2013,"PROY",12736980922,0.0202615159365005
+"209","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2013,"EJEC",280702192990,0.389217902893488
+"416","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2013,"PROY",253555375985,0.40334646983979
+"201","Institucional","Ministerio Público","Ministerio Público",2013,"EJEC",2352739390,0.00326227694082649
+"408","Institucional","Ministerio Público","Ministerio Público",2013,"PROY",2081570838,0.00331128553660966
+"202","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2013,"EJEC",75556015466,0.104764959537427
+"409","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2013,"PROY",52866242000,0.0840976532308174
+"204","Institucional","Poder Judicial de la Nación","Poder Judicial",2013,"EJEC",7830227540,0.01085728867963
+"411","Institucional","Poder Judicial de la Nación","Poder Judicial",2013,"PROY",7126018367,0.0113358052109019
+"205","Institucional","Poder Legislativo Nacional","Poder Legislativo",2013,"EJEC",5457697555,0.00756757036472349
+"412","Institucional","Poder Legislativo Nacional","Poder Legislativo",2013,"PROY",4246947021,0.00675588550178601
+"206","Ejecutivo","Presidencia de la Nación","Presidencia",2013,"EJEC",3886476196,0.00538893586309271
+"413","Ejecutivo","Presidencia de la Nación","Presidencia",2013,"PROY",3424108830,0.0054469450847276
+"194","Financiero","Servicio de la Deuda Pública","Deuda Publica",2013,"EJEC",44583508000,0.0618188953301596
+"401","Financiero","Servicio de la Deuda Pública","Deuda Publica",2013,"PROY",5.5495e+10,0.0882793837709177
+"208","TOTAL","TOTAL","TOTAL",2013,"EJEC",721195481768,1
+"415","TOTAL","TOTAL","TOTAL",2013,"PROY",628629218165,1
+"426","Ejecutivo","Jefatura de Gabinete de Ministros","Jefatura de Gabinete",2014,"PROY",5496354025,0.0063945096533563
+"418","Productivo","Ministerio de Ciencia, Tecnología e Innovación Productiva","Ciencia",2014,"PROY",5578022050,0.0064895229970852
+"419","Exterior","Ministerio de Defensa","Defensa",2014,"PROY",35103169659,0.0408393557305253
+"420","Básico","Ministerio de Desarrollo Social","Desarrollo Social",2014,"PROY",48822237290,0.0568002472601566
+"422","Productivo","Ministerio de Economía","Economía",2014,"PROY",19486846216,0.0226711790534056
+"423","Básico","Ministerio de Educación","Educación",2014,"PROY",45669706986,0.0531325640341973
+"427","Interior","Ministerio de Justicia, Seguridad  y Derechos Humanos","Justicia, Seguridad  y Derechos Humanos",2014,"PROY",42995069625,0.050020865925533
+"425","Interior","Ministerio del Interior","Interior",2014,"PROY",29500947639,0.0343216782621175
+"430","Productivo","Ministerio de Planificación Federal, Inversión Pública y Servicios","Planificación",2014,"PROY",83340439870,0.0969590468226208
+"424","Productivo","Ministerio de Producción","Industria",2014,"PROY",1809334569,0.00210499675148232
+"417","Exterior","Ministerio de Relaciones Exteriores y Culto","Cancillería",2014,"PROY",3575527049,0.00415980159332387
+"434","Básico","Ministerio de Salud","Salud",2014,"PROY",16307231064,0.0189719850620903
+"436","Básico","Ministerio de Trabajo, Empleo y Seguridad Social","Trabajo",2014,"PROY",340989748733,0.396710661294913
+"428","Institucional","Ministerio Público","Ministerio Público",2014,"PROY",2821623545,0.00328270320917691
+"429","Financiero","Obligaciones a Cargo del Tesoro","Obligaciones a Cargo del Tesoro",2014,"PROY",81377992521,0.0946759172315672
+"431","Institucional","Poder Judicial de la Nación","Poder Judicial",2014,"PROY",9197042990,0.0106999257897853
+"432","Institucional","Poder Legislativo Nacional","Poder Legislativo",2014,"PROY",5884887791,0.00684653346878764
+"433","Ejecutivo","Presidencia de la Nación","Presidencia",2014,"PROY",4374507803,0.00508934327150915
+"421","Financiero","Servicio de la Deuda Pública","Deuda Publica",2014,"PROY",7.7212e+10,0.0898291625883663
+"435","TOTAL","TOTAL","TOTAL",2014,"PROY",859542689425,1
