@@ -119,6 +119,9 @@ calcular_indicadores<-function(data_normalizada_ok){
   data_indicadores$share_proy<-NA
   data_indicadores$value_exec<-NA
   data_indicadores$share_exec<-NA
+  #indicadores
+  data_indicadores$rel_exec_proy<-NA
+  #
   data_indicadores<-data_indicadores[0,]
   data_indicadores<-data_indicadores[,-c(6,7,8)]
   for (i in c(1:nrow(data_normalizada_ok))){
@@ -141,6 +144,8 @@ calcular_indicadores<-function(data_normalizada_ok){
       field_share<-'share_exec'
     }
     data_indicadores[j,c(field_value,field_share)]<-data_normalizada_ok[i,c("value","share")]
+    #caclulamos indicadores
+    data_indicadores[j,]$rel_exec_proy<-data_indicadores[j,'value_exec']/data_indicadores[j,'value_proy']
   }
   data_indicadores
 }
