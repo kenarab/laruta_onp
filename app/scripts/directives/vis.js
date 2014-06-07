@@ -20,25 +20,13 @@ angular.module('onpApp')
             bounding_radius = null
 
         var positions = [
-            { "name": "Cancillería", "department": { "x":100, "y":100 } },
-            { "name": "Ciencia", "department": { "x":200, "y":100 } },
-            { "name": "Defensa", "department": { "x":300, "y":100 } },
-            { "name": "Desarrollo Social", "department": { "x":400, "y":100 } },
-            { "name": "Deuda Publica", "department": { "x":500, "y":100 } },
-            { "name": "Economía", "department": { "x":600, "y":100 } },
-            { "name": "Educación", "department": { "x":100, "y":200 } },
-            { "name": "Industria", "department": { "x":200, "y":200 } },
-            { "name": "Interior", "department": { "x":300, "y":200 } },
-            { "name": "Jefatura de Gabinete", "department": { "x":400, "y":200 } },
-            { "name": "Justicia, Seguridad  y Derechos Humanos", "department": { "x":500, "y":200 } },
-            { "name": "Ministerio Público", "department": { "x":600, "y":200 } },
-            { "name": "Obligaciones a Cargo del Tesoro", "department": { "x":100, "y":300 } },
-            { "name": "Planificación", "department": { "x":200, "y":300 } },
-            { "name": "Poder Judicial", "department": { "x":300, "y":300 } },
-            { "name": "Poder Legislativo", "department": { "x":400, "y":300 } },
-            { "name": "Presidencia", "department": { "x":500, "y":300 } },
-            { "name": "Salud", "department": { "x":600, "y":300 } },
-            { "name": "Trabajo", "department": { "x":100, "y":500 } }
+            { "name": "Básico", "department": { "x":200, "y":200 } },
+            { "name": "Productivo", "department": { "x":400, "y":200 } },
+            { "name": "Interior", "department": { "x":600, "y":200 } },
+            { "name": "Ejecutivo", "department": { "x":200, "y":400 } },
+            { "name": "Exterior", "department": { "x":350, "y":400 } },
+            { "name": "Financiero", "department": { "x":450, "y":400 } },
+            { "name": "Institucional", "department": { "x":600, "y":400 } }
         ]
 
         function find_position(name) {
@@ -60,22 +48,20 @@ angular.module('onpApp')
                 .on("tick", function(e) {
                     circles
                         .each(move_towards_center(e.alpha))
-//                        .each(total_sort(e.alpha))
-//                        .each(buoyancy(e.alpha))
                         .attr("cx", function(d) {return d.x;})
                         .attr("cy", function(d) {return d.y;});
                 });
             force.start();
         }
 
-        function display_group_jurisdiction() {
+        function display_group_category() {
             force.gravity(layout_gravity)
                 .nodes(nodes)
                 .charge(charge)
                 .friction(0.9)
                 .on("tick", function(e) {
                     circles
-                        .each(static_department(e.alpha))
+                        .each(static_category(e.alpha))
                         .attr("cx", function(d) {return d.x;})
                         .attr("cy", function(d) {return d.y;});
                 });
@@ -89,45 +75,13 @@ angular.module('onpApp')
             };
         }
 
-        function total_sort(alpha) {
-            var that = this;
-            return function(d) {
-                var targetY = height/2;
-                var targetX = width/2;
-
-                if (d.isNegative) {
-                    if (d.changeCategory > 0) {
-                        d.x = - 200
-                    } else {
-                        d.x =  1100
-                    }
-                }
-
-                d.y = d.y + (targetY - d.y) * (default_gravity + 0.02) * alpha
-                d.x = d.x + (targetX - d.x) * (default_gravity + 0.02) * alpha
-
-            };
-        }
-
-        function buoyancy(alpha) {
-            return function(d) {
-                var targetY = height/2 - (d.changeCategory / 3) * bounding_radius
-                d.y = d.y + (targetY - d.y) * (default_gravity) * alpha * alpha * alpha * 100
-            };
-        }
-
-        function static_department(alpha) {
+        function static_category(alpha) {
             return function(d){
-                var targetY = 0;
-                var targetX = 0;
+                var targetX = d.positions.department.x;
+                var targetY = d.positions.department.y;
 
-                if (d.positions.department) {
-                    targetX = d.positions.department.x;
-                    targetY = d.positions.department.y;
-                };
-
-                d.y += (targetY - d.y) * Math.sin(Math.PI * (1 - alpha*10)) * 0.6
-                d.x += (targetX - d.x) * Math.sin(Math.PI * (1 - alpha*10)) * 0.4
+                d.x = d.x + (targetX - d.x) * (damper + 0.02) * alpha;
+                d.y = d.y + (targetY - d.y) * (damper + 0.02) * alpha;
             };
         }
 
@@ -173,7 +127,7 @@ angular.module('onpApp')
 
                 scope.$watch('layout', function(layout) {
                     if (layout == "jurisdiction") {
-                        display_group_jurisdiction()
+                        display_group_category()
                     }
                 })
 
@@ -203,7 +157,7 @@ angular.module('onpApp')
                             category: node_data[i]['categoria'],
                             jurisdiction: node_data[i]['juris_abrev'],
                             changeCategory: changeCategory(node_data[i]['value_exec']/node_data[i]['value_proy']),
-                            positions: find_position(node_data[i]['juris_abrev'])
+                            positions: find_position(node_data[i]['categoria'])
                         })
                     }
                     console.log(nodes);        //TODO(gb): Remove trace!!!
