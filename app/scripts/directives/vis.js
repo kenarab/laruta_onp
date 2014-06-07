@@ -49,7 +49,9 @@ angular.module('onpApp')
                     circles
                         .each(move_towards_center(e.alpha))
                         .attr("cx", function(d) {return d.x;})
-                        .attr("cy", function(d) {return d.y;});
+                        .attr("cy", function(d) {return d.y;})
+                        .on('mouseover', tip.show)
+                        .on('mouseout', tip.hide);
                 });
             force.start();
         }
@@ -90,10 +92,9 @@ angular.module('onpApp')
             circles;
 
         /* Initialize tooltip */
-        var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d; });
-
-        /* Invoke the tip in the context of your visualization */
-        svg.call(tip);
+        var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { 
+            return '<span>Categoria: ' + d.category + '</span><br><span>Jurisdicción: '+ d.jurisdiction +'</span></span><br><span>Presupuesto Ejecutado: '+ d.value +'</span></span><br><span>Presupuesto Proyectado: '+d.value_proy;
+        });
 
         // Radius scale
         var radius = d3.scale.pow()
@@ -129,6 +130,7 @@ angular.module('onpApp')
                     .attr("height", height)
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                    .call(tip);
 
 
                 scope.$watch('layout', function(layout) {
@@ -157,6 +159,7 @@ angular.module('onpApp')
                             sid: node_data[i]['id'],
                             radius: radius(parseInt(node_data[i]['value_exec'], 10)),
                             value: parseInt(node_data[i]['value_exec'], 10),
+                            value_proy: parseInt(node_data[i]['value_proy'], 10),
                             year: scope.year,
                             x: Math.random() * 900,
                             y: Math.random() * 800,
