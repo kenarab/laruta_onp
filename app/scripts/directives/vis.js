@@ -93,8 +93,10 @@ angular.module('onpApp')
 
         /* Initialize tooltip */
         var tip = d3.tip().attr('class', 'd3-tip').html(function(d) { 
-            return '<span>Categoria: ' + d.category + '</span><br><span>Jurisdicción: '+ d.jurisdiction +'</span></span><br><span>Presupuesto Ejecutado: '+ d.value +'</span></span><br><span>Presupuesto Proyectado: '+d.value_proy;
+            return '<span>Categoria: ' + d.category + '</span><br><span>Jurisdicción: '+ d.jurisdiction +'</span></span><br><span>Presupuesto Ejecutado: '+ d.presupuesto_ejec +'</span></span><br><span>Presupuesto Proyectado: '+ millones(d.value_proy);
         });
+
+        var millones = d3.format("0,000");
 
         // Radius scale
         var radius = d3.scale.pow()
@@ -160,6 +162,7 @@ angular.module('onpApp')
                             radius: radius(parseInt(node_data[i]['value_exec'], 10)),
                             value: parseInt(node_data[i]['value_exec'], 10),
                             value_proy: parseInt(node_data[i]['value_proy'], 10),
+                            presupuesto_ejec: millones(parseInt(node_data[i]['value_exec'], 10)),
                             year: scope.year,
                             x: Math.random() * 900,
                             y: Math.random() * 800,
