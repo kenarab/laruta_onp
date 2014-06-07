@@ -20,41 +20,31 @@ angular.module('onpApp')
             bounding_radius = null
 
         var positions = [
-            { "name": "Cancillería", "department": { "x":225, "y":476 } },
-            { "name": "Ciencia", "department": { "x":225, "y":476 } },
-            { "name": "Defensa", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
-            { "name": "", "department": { "x":225, "y":476 } },
+            { "name": "Cancillería", "department": { "x":100, "y":100 } },
+            { "name": "Ciencia", "department": { "x":200, "y":100 } },
+            { "name": "Defensa", "department": { "x":300, "y":100 } },
+            { "name": "Desarrollo Social", "department": { "x":400, "y":100 } },
+            { "name": "Deuda Publica", "department": { "x":500, "y":100 } },
+            { "name": "Economía", "department": { "x":600, "y":100 } },
+            { "name": "Educación", "department": { "x":100, "y":200 } },
+            { "name": "Industria", "department": { "x":200, "y":200 } },
+            { "name": "Interior", "department": { "x":300, "y":200 } },
+            { "name": "Jefatura de Gabinete", "department": { "x":400, "y":200 } },
+            { "name": "Justicia, Seguridad  y Derechos Humanos", "department": { "x":500, "y":200 } },
+            { "name": "Ministerio Público", "department": { "x":600, "y":200 } },
+            { "name": "Obligaciones a Cargo del Tesoro", "department": { "x":100, "y":300 } },
+            { "name": "Planificación", "department": { "x":200, "y":300 } },
+            { "name": "Poder Judicial", "department": { "x":300, "y":300 } },
+            { "name": "Poder Legislativo", "department": { "x":400, "y":300 } },
+            { "name": "Presidencia", "department": { "x":500, "y":300 } },
+            { "name": "Salud", "department": { "x":600, "y":300 } },
+            { "name": "Trabajo", "department": { "x":100, "y":500 } }
         ]
 
         function find_position(name) {
             var pos = positions.filter(function (pos) {
                 return pos.name == name
             });
-            console.log(pos);        //TODO(gb): Remove trace!!!
             return pos.length>0 ? pos[0] : { "name": "Other", "department": { "x":0, "y":0 } }
         }
 
@@ -72,7 +62,20 @@ angular.module('onpApp')
                         .each(move_towards_center(e.alpha))
 //                        .each(total_sort(e.alpha))
 //                        .each(buoyancy(e.alpha))
-//                        .each(static_department(e.alpha))
+                        .attr("cx", function(d) {return d.x;})
+                        .attr("cy", function(d) {return d.y;});
+                });
+            force.start();
+        }
+
+        function display_group_jurisdiction() {
+            force.gravity(layout_gravity)
+                .nodes(nodes)
+                .charge(charge)
+                .friction(0.9)
+                .on("tick", function(e) {
+                    circles
+                        .each(static_department(e.alpha))
                         .attr("cx", function(d) {return d.x;})
                         .attr("cy", function(d) {return d.y;});
                 });
@@ -149,10 +152,16 @@ angular.module('onpApp')
             .domain([-3, -3])
             .range(["#d84b2a", "#7aa25c"]);
 
+        var changeCategory = d3.scale.ordinal()
+            .domain([0.5, 1.5])
+            .range([-3,-2,-1,0,1,2,3])
+
         return {
             restrict: 'E',
             scope: {
-                data: '='
+                data: '=',
+                layout: '=',
+                dataloaded: '='
             },
             link: function postLink(scope, element, attrs) {
                 svg = d3.select($(element)[0]).append("svg")
@@ -162,32 +171,38 @@ angular.module('onpApp')
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
 
+                scope.$watch('layout', function(layout) {
+                    if (layout == "jurisdiction") {
+                        display_group_jurisdiction()
+                    }
+                })
+
                 scope.$watch('data', function(data) {
                     if (!data) return;
 
                     var node_data = data.filter(function(d) {
-                        return d['categoria'] != "TOTAL" && d['type'] == "EJEC";
+                        return d['categoria'] != "TOTAL";
                     })
 
                     var total = data.filter(function(d) {
-                        return d['categoria'] == "TOTAL" && d['type'] == "EJEC";
+                        return d['categoria'] == "TOTAL";
                     })
 
-                    radius.domain([0, d3.max(node_data, function(d) { return parseInt(d['value'], 10); } )]);
+                    radius.domain([0, d3.max(node_data, function(d) { return parseInt(d['value_exec'], 10); } )]);
 
                     nodes = []
                     for (var i=0; i<node_data.length; i++) {
                         nodes.push({
                             index: i,
                             sid: node_data[i]['id'],
-                            radius: radius(parseInt(node_data[i]['value'], 10)),
-                            value: node_data[i]['value'],
+                            radius: radius(parseInt(node_data[i]['value_exec'], 10)),
+                            value: parseInt(node_data[i]['value_exec'], 10),
                             year: scope.year,
                             x: Math.random() * 900,
                             y: Math.random() * 800,
                             category: node_data[i]['categoria'],
                             jurisdiction: node_data[i]['juris_abrev'],
-                            changeCategory: Math.floor((Math.random()*7) - 3),
+                            changeCategory: changeCategory(node_data[i]['value_exec']/node_data[i]['value_proy']),
                             positions: find_position(node_data[i]['juris_abrev'])
                         })
                     }
@@ -197,7 +212,6 @@ angular.module('onpApp')
                     });
 
                     bounding_radius = radius(total.value);
-                    console.log(nodes);        //TODO(gb): Remove trace!!!
                     // Circles
                     circles = svg.selectAll('circles')
                         .data(nodes)

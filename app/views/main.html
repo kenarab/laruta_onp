@@ -22,7 +22,11 @@
         <option>2013</option>
         <option>2014</option>
     </select>
-    <vis data='data'></vis>
+    <select ng-model="layout">
+        <option value="all">Normal</option>
+        <option value="jurisdiction">Por jurisdicción</option>
+    </select>
+    <vis data="data" layout="layout"></vis>
 </div>
 
 <div class="footer">
