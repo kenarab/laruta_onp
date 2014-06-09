@@ -12,3 +12,17 @@ Hay un dropbox donde están los datos y los presupuestos:
 https://www.dropbox.com/home/hhba-laruta
 
 Pedir acceso a @kenarab
+
+
+## Instalar el app ##
+
+```
+    bower install
+    npm install
+```
+
+## Levantar el app ##
+
+```
+    grunt serve
+```

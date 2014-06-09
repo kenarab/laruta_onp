@@ -375,6 +375,12 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
+  grunt.registerTask('heroku', [
+      'compass:dist',
+      'autoprefixer',
+      'imagemin'
+  ]);
+
   grunt.registerTask('test', [
     'clean:server',
     'concurrent:test',
