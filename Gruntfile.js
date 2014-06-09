@@ -356,19 +356,25 @@ module.exports = function (grunt) {
     },
 
     buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      heroku: {
         options: {
-              dir: 'dist',
-              commit: true,
-              push: true,
-              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-          },
-        pages: {
-            options: {
-                remote: 'git@github.com:kenarab/laruta_onp.git',
-                branch: 'gh-pages'
-            }
+          remote: 'git@heroku.com:larutaonp.git',
+          branch: 'master'
         }
       }
+//      pages: {
+//        options: {
+//          remote: 'git@github.com:kenarab/laruta_onp.git',
+//          branch: 'gh-pages'
+//        }
+//      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
