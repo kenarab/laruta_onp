@@ -9,8 +9,6 @@
 
 .Rproj.user
 
-hhba-laruta-config.R
-
 node_modules
 dist
 .tmp
