@@ -1,0 +1,23 @@
+{
+  "name": "prod",
+  "version": "0.0.0",
+  "description": "La ruta del dinero - ONP",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kenarab/laruta_onp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenarab/laruta_onp/issues"
+  },
+  "homepage": "https://github.com/kenarab/laruta_onp",
+  "dependencies": {
+    "express": "^4.4.1",
+    "gzippo": "^0.2.0"
+  }
+}
