@@ -132,7 +132,11 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= yeoman.dist %>/*',
-            '!<%= yeoman.dist %>/.git*'
+            '!<%= yeoman.dist %>/.git*',
+            '!<%= yeoman.dist %>/Procfile',
+            '!<%= yeoman.dist %>/package.json',
+            '!<%= yeoman.dist %>/web.js',
+            '!<%= yeoman.dist %>/node_modules'
           ]
         }]
       },
@@ -349,7 +353,22 @@ module.exports = function (grunt) {
         configFile: 'karma.conf.js',
         singleRun: true
       }
-    }
+    },
+
+    buildcontrol: {
+        options: {
+              dir: 'dist',
+              commit: true,
+              push: true,
+              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+          },
+        pages: {
+            options: {
+                remote: 'git@github.com:kenarab/laruta_onp.git',
+                branch: 'gh-pages'
+            }
+        }
+      }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -387,6 +406,10 @@ module.exports = function (grunt) {
     'autoprefixer',
     'connect:test',
     'karma'
+  ]);
+
+  grunt.registerTask('deploy', ['' +
+    'buildcontrol'
   ]);
 
   grunt.registerTask('build', [
