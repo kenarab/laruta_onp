@@ -368,17 +368,19 @@ module.exports = function (grunt) {
           branch: 'master'
         }
       }
-//      pages: {
-//        options: {
-//          remote: 'git@github.com:kenarab/laruta_onp.git',
-//          branch: 'gh-pages'
-//        }
-//      }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-gh-pages');
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
